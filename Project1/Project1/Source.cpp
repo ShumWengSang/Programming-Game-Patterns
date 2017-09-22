@@ -13,5 +13,17 @@ void main()
 	Command_Example commandPattern;
 	commandPattern.Start_Example();
 
+
+	cout << endl;
+	cout << "Next is the flyweight pattern" << endl;
+	Flyweight_Example flywieght;
+	flywieght.Start_Example();
+
+	cout << endl;
+	cout << "Now we demonstrate the Observer Pattern" << endl;
+	Observer_Example obs;
+	obs.Start_Example();
+
 	system("pause");
+
 }

@@ -1,6 +1,15 @@
 #pragma once
 #include "Example_Base.h"
 #include "commands.h"
+
+/////////////////////////////////////////////
+//
+//             COMMAND PATTERN
+//    http://gameprogrammingpatterns.com/command.html
+//        Reified Callbacks
+//
+//////////////////////////////////////////////
+
 class Command_Example : Example_Base
 {
 private:

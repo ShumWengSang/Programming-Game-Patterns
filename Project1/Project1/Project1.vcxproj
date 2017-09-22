@@ -111,16 +111,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Achievements.cpp" />
     <ClCompile Include="Command_Example.cpp" />
+    <ClCompile Include="Flyweight_Example.cpp" />
+    <ClCompile Include="Observer.cpp" />
+    <ClCompile Include="Observer_Example.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Subject.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Achievements.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="commands.h" />
     <ClInclude Include="Command_Example.h" />
     <ClInclude Include="Example_Base.h" />
+    <ClInclude Include="Flyweight_Example.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Observer_Example.h" />
+    <ClInclude Include="Subject.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
