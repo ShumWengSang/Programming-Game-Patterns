@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int GameObject::GiveID = 2;
+int GameObject::GiveID = 1;
 
 void main()
 {
@@ -24,6 +24,10 @@ void main()
 	Observer_Example obs;
 	obs.Start_Example();
 
-	system("pause");
+	cout << endl;
+	cout << "This time, its the prototype Pattern" << endl;
+	Prototype_Example prototype;
+	prototype.Start_Example();
 
+	system("pause");
 }

@@ -1,7 +1,9 @@
 #pragma once
 #include "Observer.h"
-
+#include <iostream>
 #include <vector>
+
+using namespace std;
 
 enum Achievement_Name
 {
@@ -34,13 +36,13 @@ class Achievements :
 	public Observer
 {
 private:
-	vector<Achievement> list_of_achievemnt;
+	vector<Achievement *> list_of_achievemnt;
 public:
 	Achievements();
 	~Achievements();
 
 	void OnNotify(const GameObject& go, Event var_event);
 
-	void UnlockAcheivement(Achievement_Name achiemvent);
+	void UnlockAcheivement(Achievement_Name achiemvent, char * message, char * failMessage = "Unlocked Already");
 };
 

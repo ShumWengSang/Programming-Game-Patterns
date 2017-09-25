@@ -22,7 +22,7 @@
     <ProjectGuid>{61EE9340-6F92-42D8-A74A-BFDC89A44EF3}</ProjectGuid>
     <RootNamespace>Project1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>Game</ProjectName>
+    <ProjectName>Example Patterns</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -116,6 +116,7 @@
     <ClCompile Include="Flyweight_Example.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="Observer_Example.cpp" />
+    <ClCompile Include="Prototype_Example.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Subject.cpp" />
     <ClCompile Include="Terrain.cpp" />
@@ -131,10 +132,16 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Events.h" />
+    <ClInclude Include="Monster.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="Observer_Example.h" />
+    <ClInclude Include="Prototype_Example.h" />
+    <ClInclude Include="Spawner_BaseClass.h" />
+    <ClInclude Include="Spawner_FunctionPrototype.h" />
+    <ClInclude Include="Spawner_Templated.h" />
     <ClInclude Include="Subject.h" />
     <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Monsters.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

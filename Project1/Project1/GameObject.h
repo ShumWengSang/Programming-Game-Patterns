@@ -14,12 +14,12 @@ public:
 
 		_itoa_s(CurrentID, &Name, 2, 10);
 	};
-	char GetName()
+	const char GetName()
 	{
 		return Name;
 	}
 
-	int GetID()
+	 int GetID()const
 	{
 		return CurrentID;
 	}

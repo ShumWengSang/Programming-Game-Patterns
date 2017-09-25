@@ -1,18 +1,21 @@
 #pragma once
 #include "Observer.h"
 #include "Events.h"
+#include <vector>
+
 #define MAX_OBS 10
+using namespace std;
+
 class Subject
 {
 private:
-	Observer * _Observer[MAX_OBS];
+	vector<Observer*> _Observer;
 	int num_of_obs;
-protected:
-	void notify(const GameObject& go, Event event_);
 public:
 	Subject();
 	~Subject();
 
+	void notify(const GameObject& go, Event event_);
 	void AddObserver(Observer * obs);
 	void RemoveObserver(Observer * obs);
 };
